@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  --purple: #854dff;
+  --black: #151515;
+  --grey: #716f6f;
+  --line: #dcdcdc;
+  --light-Grey: #f0f0f0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  background-color: var(--light-Grey);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}

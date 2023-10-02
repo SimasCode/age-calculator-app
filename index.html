@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <!-- FONT LINK -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+    rel="stylesheet">
+  <!-- FONT LINK -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+  <script src="index.js" defer></script>
+  <title>Frontend Mentor | Age calculator app</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <!-- INPUT - START -->
+    <div>
+      <form class="input-container" id="form">
+        <div class="flex">
+          <label class="input-label" for="day">Day</label>
+          <input class="input-input" type="number" id="dayInput" placeholder="DD">
+        </div>
+
+        <div class="flex">
+          <label class="input-label" for="month">Month</label>
+          <input class="input-input" type="number" id="monthInput" placeholder="MM">
+        </div>
+
+        <div class="flex">
+          <label class="input-label" for="year">Year</label>
+          <input class="input-input" type="number" id="yearInput" placeholder="YYYY">
+        </div>
+    </div>
+
+    <div class="line-container">
+      <button class="line-btn" type="submit"><img class="line-image" src="/assets/images/icon-arrow.svg"
+          alt="arrow-icon"></button>
+    </div>
+    </form>
+    <!-- INPUT - END -->
+
+    <!-- LINE - START -->
+
+    <!-- LINE - END -->
+
+    <!-- OUTPUT - START -->
+    <div class="output-container">
+      <p class="output-title"><span class="output-number" id="yearOutput">--</span> years</p>
+      <p class="output-title"><span class="output-number" id="monthOutput">--</span> months</p>
+      <p class="output-title"><span class="output-number" id="dayOutput">--</span> days</p>
+    </div>
+    <!-- OUTPUT - END -->
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.linkedin.com/in/simonas-janulaitis/">Simonas Janulaitis</a>.
+    </div>
+  </div>
+</body>
+
+</html>
