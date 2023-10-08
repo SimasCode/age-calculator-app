@@ -2,7 +2,7 @@
 
 ### Screenshot
 
-![](./assets/images/age-calculator.JPG.jpg)
+![](./assets/images/age-calculator.jpg)
 
 ### Links
 
