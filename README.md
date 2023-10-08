@@ -9,16 +9,12 @@
 - Solution URL: [URL here](https://github.com/SimasCode/age-calculator-app)
 - Live Site URL: [URL here](https://agecalculatorsimjan.netlify.app/)
 
-## My process
-
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
+- HTML5
+- CSS
 - Javascript
+- Mobile-first workflow
 
 ## Author
 
