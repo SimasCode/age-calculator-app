@@ -4,11 +4,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 48px;
-  margin-bottom: 48px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 48px 24px;
   width: 350px;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
 }
 /* COMMON - END  */
 
@@ -19,9 +22,9 @@
   align-self: stretch;
   width: auto;
 }
+
 .input-container {
   display: flex;
-  flex-direction: row;
   gap: 16px;
   margin-bottom: 32px;
 }
@@ -31,6 +34,7 @@
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 4px;
 }
 
 .input-input {
@@ -45,9 +49,7 @@
 .input-input::placeholder {
   color: black;
 }
-/* INPUT - END  */
 
-/* LINE - START */
 .line-container {
   background-color: var(--purple);
   height: 64px;
@@ -56,7 +58,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 32px;
+  margin: 0 auto 32px auto;
+}
+
+.line-container:hover {
+  background-color: var(--black);
 }
 
 .line-btn {
@@ -66,11 +72,16 @@
   cursor: pointer;
 }
 
+.line-btn:hover {
+  background-color: var(--black);
+}
+
 .line-image {
   height: 24px;
   width: 24px;
 }
-/* LINE - END */
+
+/* INPUT - END  */
 
 /* OUTPUT - START  */
 .output-title {
@@ -95,3 +106,47 @@
   text-decoration: none;
 }
 /* ATTRIBUTION - END */
+
+@media screen and (min-width: 400px) {
+  /* COMMON - START  */
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 56px;
+    width: 840px;
+  }
+  /* COMMON - END  */
+
+  /* INPUT - START  */
+  .input-label {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+
+  .line-container {
+    height: 96px;
+    width: 96px;
+    margin-right: 0;
+  }
+
+  .line-image {
+    height: 44px;
+    width: 44px;
+  }
+  /* INPUT - END  */
+
+  /* OUTPUT - START  */
+  .output-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .output-title {
+    font-size: 104px;
+  }
+  /* OUTPUT - END  */
+}

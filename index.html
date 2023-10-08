@@ -22,34 +22,33 @@
 <body>
   <div class="container">
     <!-- INPUT - START -->
-    <div>
-      <form class="input-container" id="form">
+    <form class="form-container" id="form">
+      <div class="input-container">
         <div class="flex">
           <label class="input-label" for="day">Day</label>
           <input class="input-input" type="number" id="dayInput" placeholder="DD">
+          <p id="day-error"></p>
         </div>
 
         <div class="flex">
           <label class="input-label" for="month">Month</label>
           <input class="input-input" type="number" id="monthInput" placeholder="MM">
+          <p id="month-error"></p>
         </div>
 
         <div class="flex">
           <label class="input-label" for="year">Year</label>
           <input class="input-input" type="number" id="yearInput" placeholder="YYYY">
+          <p id="year-error"></p>
         </div>
-    </div>
+      </div>
 
-    <div class="line-container">
-      <button class="line-btn" type="submit"><img class="line-image" src="/assets/images/icon-arrow.svg"
-          alt="arrow-icon"></button>
-    </div>
+      <div class="line-container">
+        <button class="line-btn" type="submit"><img class="line-image" src="/assets/images/icon-arrow.svg"
+            alt="arrow-icon"></button>
+      </div>
     </form>
     <!-- INPUT - END -->
-
-    <!-- LINE - START -->
-
-    <!-- LINE - END -->
 
     <!-- OUTPUT - START -->
     <div class="output-container">

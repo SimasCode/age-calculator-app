@@ -7,24 +7,23 @@ const dayInput = document.getElementById('dayInput');
 const monthInput = document.getElementById('monthInput');
 const yearInput = document.getElementById('yearInput');
 
-const dayOutput = document.getElementById('dayOutput');
-const monthOutput = document.getElementById('monthOutput');
-const yearOutput = document.getElementById('yearOutput');
-
 form.addEventListener('submit', (event) => {
   event.preventDefault();
 
   // User date input
-  const dayValue = parseInt(dayInput.value);
-  const monthValue = parseInt(monthInput.value) - 1;
-  const yearValue = parseInt(yearInput.value);
+  const dayValue = dayInput.value;
+  const monthValue = monthInput.value - 1;
+  const yearValue = yearInput.value;
   console.log('dayValue ===', dayValue);
   console.log('monthValue ===', monthValue);
   console.log('yearValue ===', yearValue);
 
+  emptyValues(dayValue, monthValue, yearValue);
+  validDate(dayValue, monthValue, yearValue);
+
   units(dayValue, monthValue, yearValue);
 
-  //   form.reset();
+  form.reset();
 });
 
 function units(day, month, year) {
@@ -57,7 +56,18 @@ function units(day, month, year) {
     getMonth += 12;
   }
 
+  mountToDom(getDay, getMonth, getYear);
+
   console.log('getDay ===', getDay);
   console.log('getMonth ===', getMonth);
   console.log('getYear ===', getYear);
+}
+
+function mountToDom(day, month, year) {
+  const dayOutput = document.getElementById('dayOutput');
+  const monthOutput = document.getElementById('monthOutput');
+  const yearOutput = document.getElementById('yearOutput');
+  dayOutput.textContent = day;
+  monthOutput.textContent = month;
+  yearOutput.textContent = year;
 }
